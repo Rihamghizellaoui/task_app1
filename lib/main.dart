@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData.light(useMaterial3: true),
       home: task1(),
+       
     );
   }
 }
@@ -37,108 +38,86 @@ class task1 extends StatelessWidget {
         ],
       ),
       //body
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Container(
-              margin: EdgeInsets.only(bottom: 20),
-              child: Text(
-                "c4a.shop",
-                style: TextStyle(fontSize: 44, color: Colors.white),
+        body: 
+        Center(
+          child:Container(
+            
+          width:350,
+          height:350,
+          color:Colors.blueAccent,
+          child:Stack(
+             
+            children: [
+              Positioned(
+                bottom: 9,
+                left:9,
+                child: 
+              Container(
+                 
+                width:100,
+                 color:Color.fromARGB(255, 14, 207, 20),
+                height:100,
+                alignment: Alignment.center,
+                child:Text("riham",style:TextStyle(fontSize: 18),
+                ),
               ),
-              alignment: Alignment.center,
-              height: 320,
-              width: double.infinity,
-              decoration: BoxDecoration(
-                color: Colors.pinkAccent,
-                borderRadius: BorderRadius.circular(25),
               ),
-            ),
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  //container 1
-                  Container(
-                    margin: EdgeInsets.all(8),
-                    alignment: Alignment.center,
-                    height: 100,
-                    width: 100,
-                    decoration: BoxDecoration(
-                      color: Colors.purpleAccent,
-                      borderRadius: BorderRadius.circular(25),
-                    ),
-                    child: Text(
-                      "riham",
-                      style: TextStyle(color: Colors.white, fontSize: 18),
-                    ),
-                  ),
-                  //container2
-                  Container(
-                    margin: EdgeInsets.all(8),
-                    alignment: Alignment.center,
-                    height: 100,
-                    width: 100,
-                    decoration: BoxDecoration(
-                      color: Colors.purpleAccent,
-                      borderRadius: BorderRadius.circular(25),
-                    ),
-                    child: Text(
-                      "riham",
-                      style: TextStyle(color: Colors.white, fontSize: 18),
-                    ),
-                  ),
-                  //container3
-                  Container(
-                    margin: EdgeInsets.all(8),
-                    alignment: Alignment.center,
-                    height: 100,
-                    width: 100,
-                    decoration: BoxDecoration(
-                      color: Colors.purpleAccent,
-                      borderRadius: BorderRadius.circular(25),
-                    ),
-                    child: Text(
-                      "riham",
-                      style: TextStyle(color: Colors.white, fontSize: 18),
-                    ),
-                  ),
-                  //container 4
-                  Container(
-                    margin: EdgeInsets.all(8),
-                    alignment: Alignment.center,
-                    height: 100,
-                    width: 100,
-                    decoration: BoxDecoration(
-                      color: Colors.purpleAccent,
-                      borderRadius: BorderRadius.circular(25),
-                    ),
-                    child: Text(
-                      "riham",
-                      style: TextStyle(color: Colors.white, fontSize: 18),
-                    ),
-                  ),
-                ],
+              
+              //container 2
+             Positioned(
+              right:9,
+              top:9,
+              child:  Container(
+                width:100,
+                height:100,
+                color:Colors.amberAccent,
+                alignment: Alignment.center,
+                child:Text("riham",style:TextStyle(fontSize: 18),
+                ),
               ),
-            ),  
-            Container(
-              margin: EdgeInsets.only(bottom: 20),
-              child: Text(
-                "c4a.shop",
-                style: TextStyle(fontSize: 44, color: Colors.white),
+             ),
+              //container3
+              Positioned(
+                bottom: 9,
+                right:9,
+                child: Container(
+                width:100,
+                height:100,
+                color:Color.fromARGB(255, 197, 8, 124),
+                alignment: Alignment.center,
+                child:Text("riham",style:TextStyle(fontSize: 18),
+                ),
+              ), 
+              
               ),
-              alignment: Alignment.center,
-              height: 320,
-              width: double.infinity,
-              decoration: BoxDecoration(
-                color: Colors.pinkAccent,
-                borderRadius: BorderRadius.circular(25),
+              //container4
+              Positioned(
+                top:9,
+                left:9,
+                child:  Container(
+                width:100,
+                height:100,
+                color:Color.fromARGB(255, 167, 216, 233),
+                alignment: Alignment.center,
+                child:Text("riham",style:TextStyle(fontSize: 18),
+                ),
               ),
-            ),
-          ],
-        ),
-      ),
+              ),
+              //container5
+               Center(
+                child:  Container(
+                width:100,
+                height:100,
+                color:Color.fromARGB(255, 241, 12, 12),
+                alignment: Alignment.center,
+                child:Text("riham",style:TextStyle(fontSize: 18),
+                ),
+              ),
+              )
+            ],
+          )
+        )
+    ),
     );
   }
 }
